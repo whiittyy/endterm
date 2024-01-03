@@ -1,0 +1,167 @@
+body{
+    font-family:arial black , Helvetica, sans-serif;
+    font-size: large;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+#main_menu ul {
+    list-style: none;
+    padding-left: 0;
+    background-color: rgb(3, 69, 110);
+}
+
+#main_menu ul li a {
+    padding: 25px 80px 25px 20px;
+    color: rgb(237, 194, 95);
+    display: block;
+}
+
+#main_menu ul.level_1 > li {
+    display: inline-block;
+}
+  
+#main_menu ul.level_1 > li > a:hover {
+    color: #000000;
+    background-color: rgb(237, 194, 95);
+}
+  
+#main_menu ul.level_2 {
+    display: none;
+    position: absolute;
+}
+  
+#main_menu ul.level_2 li a:hover {
+    color: #000000;
+    background-color: rgb(237, 194, 95);
+}
+  
+#main_menu ul.level_1 > li:hover  ul.level_2 {
+    display: block;
+}
+
+#menu_1 {
+    width: 210px;
+    padding: 0;
+    list-style: none;
+}
+
+#menu_1 li{
+    margin: 20px 0px;
+    padding: 10px 5px 5px;
+    background-color: rgb(3, 69, 110);
+    border-radius: 10px;
+}
+
+#menu_2 {
+    width: 210px;
+    padding: 0;
+    list-style: none;
+}
+
+#menu_2 li {
+    margin: 20px 0px;
+    padding: 10px 5px 5px;
+    background-color: rgb(3, 69, 110);
+    border-radius: 10px;
+}
+
+#menu_2 img {
+    opacity: 0.5;
+}
+
+#menu_2 li :hover {
+    opacity: 1.0;
+}
+
+#menu_3 {
+    width: 210px;
+    padding: 0;
+    list-style: none; 
+}
+
+#menu_3 li {
+    margin: 20px 0px;
+    padding: 5px 5px;
+    background-color: rgb(237, 194, 95)v;
+    border: 2px solid ;
+    border-color: #636363;
+    border-radius: 10px;
+}
+
+#menu_3 img {
+    opacity: 0.5;
+}
+
+
+#menu_3 li :hover {
+    opacity: 1.0;
+}
+
+nav{
+    margin-bottom: 100px;
+    padding:0 10%;
+    background-color: rgb(3, 69, 110);
+}
+
+div{
+    padding:0 10%;
+}
+
+h4{
+    text-align: center;color: rgb(0, 0, 0);
+    background-color: rgb(242, 214, 34);
+}
+
+h5{
+    text-align: center;color: rgb(237, 194, 95);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.main{/*左右置中*/
+    display: flex;
+}
+
+.center{/*上下左右置中*/
+    margin: auto;
+    padding: 0 5%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    width: 66%;
+}
+
+.bottom_1{
+    margin-top: 10px;
+    padding-left: 350px;
+    display: flex;
+    justify-content: center; 
+}
+
+.bottom_2{
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center; 
+}
+
+.img_1{
+    padding:0;
+}
+
+.img_2{
+    margin: 0 100px;
+}
