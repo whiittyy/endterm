@@ -1,15 +1,15 @@
-body{
-    font-family:arial black , Helvetica, sans-serif;
+body {
+    font-family: arial black, Helvetica, sans-serif;
     font-size: large;
     margin: 0;
     background-color: rgb(233, 234, 229);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-h4{
+h4 {
     color: rgb(241, 170, 44);
     margin: 0;
     padding: 0 0 10px;
@@ -32,44 +32,57 @@ ul {
     display: block;
 }
 
-#main_menu ul.level_1 > li {
+#main_menu ul.level_1>li {
     display: inline-block;
 }
-  
-#main_menu ul.level_1 > li > a:hover {
+
+#main_menu ul.level_1>li>a:hover {
     color: #000000;
     background-color: rgb(241, 170, 44);
 }
-  
+
 #main_menu ul.level_2 {
     display: none;
     position: absolute;
 }
-  
+
 #main_menu ul.level_2 li a:hover {
     color: #000000;
     background-color: rgb(241, 170, 44);
 }
-  
-#main_menu ul.level_1 > li:hover  ul.level_2 {
+
+#main_menu ul.level_1>li:hover ul.level_2 {
     display: block;
 }
 
-nav{
-    padding:0 10%;
+nav {
+    padding: 0 10%;
     background-color: rgb(3, 69, 110);
 }
 
-div{
-    padding:0 10%;
+div {
+    padding: 0 10%;
 }
 
-.content{
-    margin-top: 50px;
-}
-
-img{
+img {
     padding: 10px 5px 0;
     display: inline-block;
 }
 
+.image-flex {
+    display: flex;
+    flex-grow:0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 10%;
+}
+
+.image-item {
+    width: 250px;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item:hover {
+    transform: scale(1.2); /* 鼠标移入时放大 */
+}
