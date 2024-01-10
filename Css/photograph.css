@@ -1,8 +1,18 @@
-body{
+
+html, body {
+	height: 100%;
+}
+
+body {
     font-family:arial black , Helvetica, sans-serif;
     font-size: large;
     margin: 0;
     background-color: rgb(233, 234, 229);
+}
+
+.fixed_bg, .infos {
+	position: relative;
+	height: 100%;
 }
 
 a{
@@ -18,6 +28,7 @@ ul {
     list-style: none;
     padding-left: 0;
     background-color: rgb(3, 69, 110);
+    z-index: 999;
 }
 
 #main_menu ul li a {
@@ -58,10 +69,6 @@ div{
     padding:0 10%;
 }
 
-.content{
-    margin-top: 50px;
-}
-
 img{
     padding: 10px 5px 0;
     display: inline-block;
@@ -71,4 +78,104 @@ h4{
     color: rgb(241, 170, 44);
     margin: 0;
     padding: 0 0 10px;
+}
+
+.fixed_bg {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg_1 {
+	background-image: url(../Pic/photograph/1.jpg);
+}
+
+.bg_2 {
+	background-image: url(../Pic/photograph/2.jpg);
+}
+
+.bg_3 {
+	background-image: url(../Pic/photograph/3.jpg);
+}
+
+.bg_4 {
+	background-image: url(../Pic/photograph/4.jpg);
+}
+
+.bg_5 {
+	background-image: url(../Pic/photograph/5.jpg);
+}
+
+.bg_6 {
+	background-image: url(../Pic/photograph/6.jpg);
+}
+
+.bg_7 {
+	background-image: url(../Pic/photograph/7.jpg);
+}
+
+.bg_8 {
+	background-image: url(../Pic/photograph/8.jpg);
+}
+
+.bg_9 {
+	background-image: url(../Pic/photograph/9.jpg);
+}
+
+.bg_10 {
+	background-image: url(../Pic/photograph/10.jpg);
+}
+
+
+.color1 {
+	background-color: #85abab;
+}
+
+.color2 {
+	background-color: #faca78;
+}
+
+.color3 {
+	background-color: #26b5b3;
+}
+
+.color4 {
+	background-color: #a67e65;
+}
+
+.color5 {
+	background-color: #86949d;
+}
+
+.color6 {
+	background-color: #e4e4c5;
+}
+
+.color7 {
+	background-color: #705a3b;
+}
+
+.color8 {
+	background-color: #a4c352;
+}
+
+.color9 {
+	background-color: #84b4ef;
+}
+
+
+.vcenter {
+	position: absolute;
+	left: 50%;
+	top: 80%;
+	color: #ffffff;
+	text-align: center;
+	/*以下 transform，主要是讓此元素往左移動自己本身寬度的50%，也往上左移動自己本身高度的50%，而前方所加的-xxx-前綴詞，是for不同瀏覽器的*/
+	-webkit-transform: translateX(-50%) translateY(-50%); /* Chrome, newer versions of Opera*/
+	-moz-transform: translateX(-50%) translateY(-50%); /* Firefox */
+	-ms-transform: translateX(-50%) translateY(-50%); /* nternet Explorer */
+	-o-transform: translateX(-50%) translateY(-50%); /* Old versions of Opera */
+	transform: translateX(-50%) translateY(-50%); /* 沒限制，有支援的瀏覽器就會run */
+	text-align: center; /*裡面的文字置中*/
 }

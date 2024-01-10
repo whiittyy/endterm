@@ -18,7 +18,7 @@ ul {
     list-style: none;
     padding-left: 0;
     background-color: rgb(3, 69, 110);
-    z-index: 9999;
+    z-index: 999;
 }
 
 #main_menu ul li a {
@@ -60,10 +60,6 @@ div{
     margin: 90px 0;
 }
 
-.content{
-    margin-top: 50px;
-}
-
 img{
     padding: 10px 5px 0;
     display: inline-block;
@@ -75,7 +71,13 @@ h4{
     padding: 0 0 10px;
 }
 
-.left{
+.img2{
+    border-radius: 25px;
+}
+
+.flex{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

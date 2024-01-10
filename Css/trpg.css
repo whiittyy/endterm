@@ -9,6 +9,12 @@ a {
     text-decoration: none;
 }
 
+h4 {
+    color: rgb(241, 170, 44);
+    margin: 0;
+    padding: 0 0 10px;
+}
+
 ul {
     margin: 0;
     list-style: none;
@@ -18,6 +24,7 @@ ul {
     list-style: none;
     padding-left: 0;
     background-color: rgb(3, 69, 110);
+    z-index: 9999;
 }
 
 #main_menu ul li a {
@@ -39,7 +46,6 @@ ul {
 #main_menu ul.level_2 {
     display: none;
     position: absolute;
-    z-index: 9999;
 }
 
 #main_menu ul.level_2 li a:hover {
@@ -57,20 +63,20 @@ nav {
 }
 
 div {
-    padding: 0 10%;
+    padding: 0 0 0 10%;
     align-content: center;
 }
 
 .content {
     display: flex;
     justify-content: flex-start;
-    margin: 50px 0;
+    margin: 90px 0;
 }
 
 .content_2 {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 75px;
     padding: 0;
 }
@@ -84,7 +90,6 @@ div {
     overflow-y: hidden;
     width: 720px;
     height: 100px;
-    cursor: grabbing;
 }
 
 .content_3::-webkit-scrollbar {
@@ -164,9 +169,12 @@ img {
 }
 
 .image-container {
+    width: 900px;   
+    height: 500px;   
     overflow: hidden;
     position: relative;
     padding: 0;
+    margin: 0  0  20px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -176,7 +184,7 @@ img {
 .zoom-image {
     height: 500px;
     padding: 0;
-    transition: transform 0.5s ease;
+    transition: transform 0.2s ease-in;
 }
 
 .zoom-image:hover {
@@ -184,8 +192,15 @@ img {
     position: relative;
 }
 
-h4 {
-    color: rgb(241, 170, 44);
-    margin: 0;
-    padding: 0 0 10px;
+#prevImage,
+#nextImage {
+    top: 50%;
+}
+
+#prevImage {
+    left: 10px; /* 設置左箭頭圖片的左側距離 */
+}
+
+#nextImage {
+    right: 10px; /* 設置右箭頭圖片的右側距離 */
 }
