@@ -7,6 +7,7 @@
     <title>Whity</title>
     <link rel="icon" href="..\Pic\小白.png" type="image/x-icon" />
     <link rel="stylesheet" href="Css/animation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,18 +26,22 @@
         </ul>
     </nav>
     <div>
-        <video src="Pic\video\1.mp4" muted loop autoplay width="600" ></video>
-        <video src="Pic\video\2.mp4" muted loop autoplay width="400" ></video> 
-        <video src="Pic\video\3.mp4" muted loop autoplay width="600" ></video>
-        <video src="Pic\video\4.mp4" muted loop autoplay width="600" ></video>
-    </div>
-    <nav>
-        <a href="https://www.facebook.com/profile.php?id=100027835171336"><img src="Pic\sns\facebook.png" width="40"></a>
-        <a href="https://twitter.com/5hite_"><img src="Pic\sns\124021.png" width="40"></a>
-        <a href="https://www.instagram.com/bisheng_bai/"><img src="Pic\sns\instagram.png" width="40"></a>
-        <h4>e-mail: lblf0711@gmail.com</h4>
-    </nav>
-    
+        <div data-aos="fade-down-right"><video src="Pic\video\1.mp4" muted loop autoplay width="600"></video></div>
+        <div class="left" data-aos="fade-down-right"><video src="Pic\video\2.mp4" muted loop autoplay width="400"></video></div>
+        <div data-aos="fade-down-right"><video src="Pic\video\3.mp4" muted loop autoplay width="400"></video></div>
+        <div class="left" data-aos="fade-down-right"><video src="Pic\video\4.mp4" muted loop autoplay width="400"></video></div>
+    </div>    
+        <nav>
+            <a href="https://www.facebook.com/profile.php?id=100027835171336"><img src="Pic\sns\facebook.png"
+                    width="40"></a>
+            <a href="https://twitter.com/5hite_"><img src="Pic\sns\124021.png" width="40"></a>
+            <a href="https://www.instagram.com/bisheng_bai/"><img src="Pic\sns\instagram.png" width="40"></a>
+            <h4>e-mail: lblf0711@gmail.com</h4>
+        </nav>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>
