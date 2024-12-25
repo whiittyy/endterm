@@ -171,7 +171,6 @@ h4{
 	top: 80%;
 	color: #ffffff;
 	text-align: center;
-	/*以下 transform，主要是讓此元素往左移動自己本身寬度的50%，也往上左移動自己本身高度的50%，而前方所加的-xxx-前綴詞，是for不同瀏覽器的*/
 	-webkit-transform: translateX(-50%) translateY(-50%); /* Chrome, newer versions of Opera*/
 	-moz-transform: translateX(-50%) translateY(-50%); /* Firefox */
 	-ms-transform: translateX(-50%) translateY(-50%); /* nternet Explorer */
