@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whity</title>
-    <link rel="icon" href="..\Pic\小白.png" type="image/x-icon" />
+    <link rel="icon" href="..\Pic\Whity.png" type="image/x-icon" />
     <link rel="stylesheet" href="Css\illustration.css">
 </head>
 
@@ -17,7 +17,7 @@
                 <a href="#">Gallery</a>
                 <ul class="level_2">
                     <li><a href="illustration.html">Illustration</a></li>
-                    <li><a href="trpg_1.html">Trpg</a></li>
+                    <li><a href="trpg_1.html">Logo</a></li>
                     <li><a href="animation.html">Animation</a></li>
                 </ul>
             </li>
@@ -26,6 +26,8 @@
     </nav>
 
     <div class="grid">
+        <div class="grid-item"><img src="Pic\img\60.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\70.png"></div>
         <div class="grid-item"><img src="Pic\img\1.jpg"></div>
         <div class="grid-item"><img src="Pic\img\2.jpg"></div>
         <div class="grid-item"><img src="Pic\img\3.jpg"></div>
@@ -40,12 +42,28 @@
         <div class="grid-item"><img src="Pic\img\12.jpg"></div>
         <div class="grid-item"><img src="Pic\img\13.jpg"></div>
         <div class="grid-item"><img src="Pic\img\14.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\56.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\76.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\77.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\57.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\58.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\59.jpg"></div>
         <div class="grid-item"><img src="Pic\img\15.jpg"></div>
         <div class="grid-item"><img src="Pic\img\16.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\61.png"></div>
+        <div class="grid-item"><img src="Pic\img\62.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\63.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\64.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\65.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\66.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\67.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\68.png"></div>
+        <div class="grid-item"><img src="Pic\img\69.jpg"></div>
         <div class="grid-item"><img src="Pic\img\17.jpg"></div>
         <div class="grid-item"><img src="Pic\img\18.jpg"></div>
         <div class="grid-item"><img src="Pic\img\19.jpg"></div>
         <div class="grid-item"><img src="Pic\img\20.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\55.jpg"></div>
         <div class="grid-item"><img src="Pic\img\21.jpg"></div>
         <div class="grid-item"><img src="Pic\img\22.jpg"></div>
         <div class="grid-item"><img src="Pic\img\23.jpg"></div>
@@ -80,6 +98,11 @@
         <div class="grid-item"><img src="Pic\img\52.jpg"></div>
         <div class="grid-item"><img src="Pic\img\53.jpg"></div>
         <div class="grid-item"><img src="Pic\img\54.jpg"></div>
+        <div class="grid-item"><img src="Pic\img\71.png"></div>
+        <div class="grid-item"><img src="Pic\img\72.png"></div>
+        <div class="grid-item"><img src="Pic\img\73.png"></div>
+        <div class="grid-item"><img src="Pic\img\74.png"></div>
+        <div class="grid-item"><img src="Pic\img\75.png"></div>
     </div>
     <div class="modal" id="modal">
         <span class="close" id="close">&times;</span>
@@ -101,12 +124,12 @@
             var masonry = new Masonry(grid, {
                 columnWidth: '.grid-item',
                 itemSelector: '.grid-item',
-                gutter: 10, // 图片之间的间距
+                gutter: 10,
             });
 
             var $grid = $('.grid').masonry({
                 columnWidth: '.grid-item',
-                gutter: 10, // 图片之间的间距
+                gutter: 10,
             });
 
             $grid.on('click', '.grid-item', function () {
@@ -121,13 +144,11 @@
             });
         });
 
-        // 获取所有图片元素
         const images = document.querySelectorAll('.grid-item img');
         const modal = document.getElementById('modal');
         const modalImg = document.getElementById('modal-img');
         const closeBtn = document.getElementById('close');
 
-        // 点击图片时触发事件
         images.forEach(image => {
             image.addEventListener('click', () => {
                 modal.style.display = 'block';
@@ -135,7 +156,6 @@
             });
         });
 
-        // 点击关闭按钮或模态框以外区域时关闭弹出窗口
         closeBtn.addEventListener('click', () => {
             modal.style.display = 'none';
         });

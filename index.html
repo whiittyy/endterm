@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whity</title>
-    <link rel="icon" href="..\Pic\小白.png" type="image/x-icon" />
-    <link rel="stylesheet" href="Css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whity</title>
+  <link rel="icon" href="..\Pic\小白.png" type="image/x-icon" />
+  <link rel="stylesheet" href="Css/index.css">
 </head>
-
 <body>
-    <nav id="main_menu">
-        <ul class="level_1">
-            <li><a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="#">Gallery</a>
-                <ul class="level_2">
-                    <li><a href="illustration.html">Illustration</a></li>
-                    <li><a href="trpg_1.html">Trpg</a></li>
-                    <li><a href="animation.html">Animation</a></li>
-                </ul>
-            </li>
-            <li><a href="photograph.html">Photograph</a></li>
+  <nav id="main_menu">
+    <ul class="level_1">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Gallery</a>
+        <ul class="level_2">
+          <li><a href="illustration.html">Illustration</a></li>
+          <li><a href="trpg_1.html">Logo</a></li>
+          <li><a href="animation.html">Animation</a></li>
         </ul>
-    </nav>
-    <div class="flex">
-    <img class="img2" src="Pic\image.png" width="300px">
-    <h3>Hello!<br />I'm whity nice to meet you.</h3>
-    </div>
-    <nav>
-        <a href="https://www.facebook.com/profile.php?id=100027835171336"><img src="Pic\sns\facebook.png" width="40"></a>
-        <a href="https://twitter.com/5hite_"><img src="Pic\sns\124021.png" width="40"></a>
-        <a href="https://www.instagram.com/bisheng_bai/"><img src="Pic\sns\instagram.png" width="40"></a>
-        <h4>e-mail: lblf0711@gmail.com</h4>
-    </nav>
+      </li>
+      <li><a href="photograph.html">Photograph</a></li>
+    </ul>
+  </nav>
+
+  <div class="flex">
+    <video 
+      id="myVideo" 
+      src="Pic/video/First.mp4" 
+      autoplay 
+      muted 
+      playsinline
+    >
+    </video>
+  </div>
+
+  <nav>
+    <a href="https://www.facebook.com/profile.php?id=100027835171336">
+      <img src="Pic\sns\facebook.png" width="40">
+    </a>
+    <a href="https://twitter.com/5hite_">
+      <img src="Pic\sns\124021.png" width="40">
+    </a>
+    <a href="https://www.instagram.com/bisheng_bai/">
+      <img src="Pic\sns\instagram.png" width="40">
+    </a>
+    <h4>e-mail: lblf0711@gmail.com</h4>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const myVideo = document.getElementById('myVideo');
+      
+      // 監聽第一支影片結束事件
+      myVideo.addEventListener('ended', () => {
+        // 切換影片來源
+        myVideo.src = 'Pic/video/loop.mp4';
+        // 第二支影片重複播放
+        myVideo.loop = true;
+        // 再次開始播放
+        myVideo.play();
+      });
+    });
+  </script>
 </body>
 </html>
