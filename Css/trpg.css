@@ -63,7 +63,6 @@ nav {
 }
 
 div {
-    padding: 0 0 0 10%;
     align-content: center;
 }
 
@@ -126,9 +125,6 @@ img {
     background-color: rgb(3, 69, 110);
 }
 
-.logo_1:hover {
-    background-color: rgb(4, 93, 148);
-}
 
 .logo_2 {
     display: flex;
@@ -137,12 +133,9 @@ img {
     margin: 10px 0;
     padding: 10px;
     width: 200px;
-    background-color: rgb(241, 170, 44);
+    background-color: rgb(244, 240, 234);
 }
 
-.logo_2:hover {
-    background-color: #edc25f;
-}
 
 .img_2 {
     padding: 0 5px;
@@ -203,4 +196,26 @@ img {
 
 #nextImage {
     right: 10px; /* 設置右箭頭圖片的右側距離 */
+}
+
+/* 移除或覆蓋原本 div 的左側 padding：0 0 0 10% 
+   讓該容器真正滿版，如果仍需要在其他 div 保留 padding，
+   可以專門只對 .fullwidth 做設定即可
+*/
+.fullwidth {
+    /* 避免全域 div 樣式影響 */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* 讓圖片左右撐滿螢幕，高度自動 */
+.fullwidth-image {
+    width: 100%;
+    height: auto; 
+    display: block; 
+    /* 如果想做裁切並維持圖片比例，可以加上 object-fit: cover; 
+       但是要保證 img 以 block/inline-block 類型顯示 */
+    /* object-fit: cover; 
+       注意：要使用 object-fit，圖片最好在 CSS 裡設置 width, height 而非 auto */
 }

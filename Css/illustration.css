@@ -86,10 +86,8 @@ html {
     gap: 10px;
     padding: 0 10%;
     margin: 90px 0;
-    /* 添加一些内边距 */
 }
 
-/* 图片放大效果 */
 .grid-item {
     width: 19%;
     box-sizing: border-box;
@@ -102,7 +100,6 @@ html {
     width: 100%;
     height: auto;
     max-width: 100%;
-    /* 可以将图像的最大宽度设置为100% */
 }
 
 .grid-item img:hover {
@@ -112,7 +109,6 @@ html {
 }
 
 
-/* 隐藏弹出窗口 */
 .modal {
     display: none;
     position: fixed;
@@ -126,7 +122,6 @@ html {
     backdrop-filter:blur(5px);
 }
 
-/* 弹出窗口内的图片样式 */
 .modal-content {
     display: block;
     margin: auto;
@@ -134,7 +129,6 @@ html {
     max-height: 100%;
 }
 
-/* 关闭按钮样式 */
 .close {
     position: absolute;
     top: 15px;
